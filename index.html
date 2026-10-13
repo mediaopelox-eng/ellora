@@ -144,25 +144,26 @@
               <div class="intro-form-card">
                 <h3>Get Pricing & Availability</h3>
                 <p class="muted-copy">Fill in your details to receive the official project brochure and price sheet.</p>
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="9e9e47db-1801-4096-8040-10f8c0e3b989">
                   <div class="row">
                     <div class="col-12 col-lg-6">
                       <input type="text" required="" name="Full Name" placeholder="Full Name *" class="form-control">
                     </div>
                     <div class="col-12 col-lg-6">
-                      <input type="text" required="" name="Full Name" placeholder="Phone Number *" class="form-control">
+                      <input type="text" required="" name="Phone Number" placeholder="Phone Number *" class="form-control" maxlength="13" minlength="10" inputmode="numeric" >
                     </div>
                     <div class="col-12 col-lg-6">
-                      <input type="text" required="" name="Full Name" placeholder="Email Address *" class="form-control">
+                      <input type="text" required="" name="Email Address" placeholder="Email Address *" class="form-control">
                     </div>
                     <div class="col-12 col-lg-6">
-                      <input type="text" required="" name="Full Name" placeholder="Company Name *" class="form-control">
+                      <input type="text" required="" name="Company Name" placeholder="Company Name *" class="form-control">
                     </div>
                     <div class="col-12 col-lg-12">
-                      <input type="text" required="" name="Full Name" placeholder="Requirement *" class="form-control">
+                      <input type="text" required="" name="Requirement" placeholder="Requirement *" class="form-control">
                     </div>
                     <div class="col-12 col-lg-12">
-                      <input type="text" required="" name="Full Name" placeholder="Have a specific query?" class="form-control">
+                      <input type="text" required="" name="Query" placeholder="Have a specific query?" class="form-control">
                     </div>
                     <div class="col-12 col-lg-12">
                       <button type="submit" class="form-control">Get Pricing & Floor Plans <span>↗</span></button>
@@ -179,10 +180,10 @@
     <section class="stats-section">
       <div class="container">
         <div class="row g-0">
-          <div class="col-6 col-lg-3 stat reveal"><strong data-count="1">0</strong><span>Signature<br>Address</span></div>
-          <div class="col-6 col-lg-3 stat reveal"><strong data-count="18">0</strong><span>Premium<br>Floors</span></div>
-          <div class="col-6 col-lg-3 stat reveal"><strong data-count="24">0</strong><span>Hour<br>Security</span></div>
-          <div class="col-6 col-lg-3 stat reveal"><strong data-count="3">0</strong><span>Level<br>Parking</span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="1">0</strong><span>SIGNATURE <br>ADDRESS</span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="20000">0</strong><span>SQ. FT. LARGE <br>FLOOR PLATES⁠ </span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="24">20</strong><span>Min FROM NEW INTERNATIONAL AIRPORT</span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="3">9-12%</strong><span>⁠RENTAL YIELD <br>POTENTIAL</span></div>
         </div>
       </div>
     </section>
@@ -410,11 +411,21 @@
     <div class="container py-5">
       <div class="row g-4">
         <div class="col-lg-5"><a class="navbar-brand" href="#home"><img src="images/logo-white.png"></a><p class="footer-copy mt-4">A premium commercial destination for businesses that refuse ordinary.</p></div>
-        <div class="col-6 col-lg-2"><small>EXPLORE</small><a href="#overview">Overview</a><a href="#spaces">Spaces</a><a href="#amenities">Amenities</a></div>
-        <div class="col-6 col-lg-2"><small>PROJECT</small><a href="#location">Location</a><a href="#contact">Enquire</a><a href="#">Brochure</a></div>
+        <div class="col-6 col-lg-2"><small>EXPLORE</small>
+          <a href="#overview">Get In Touch</a>
+          <a href="#spaces">Why Olearise</a>
+          <a href="#location">Location</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <small>PROJECT</small>
+          <a href="#plan">Floor Plan</a>
+          <a href="#amenities">Amenities</a>
+        </div>
         <div class="col-lg-3"><small>SALES OFFICE</small><p>Business District, Mumbai<br>+91 98765 43210<br>sales@elloragroup.com</p></div>
       </div>
-      <div class="footer-bottom mt-5 pt-4"><span>© 2026 Ellora Olearise. All rights reserved.</span><span>Privacy · Disclaimer</span></div>
+      <div class="footer-bottom mt-5 pt-4 text-center"><span>© 2026 Ellora Olearise. All rights reserved.</span>
+        <!-- <span>Privacy · Disclaimer</span> -->
+      </div>
     </div>
   </footer>
 
@@ -430,25 +441,26 @@
                 <div class="intro-form-card">
                     <h3>Get Pricing &amp; Availability</h3>
                     <p class="muted-copy">Fill in your details to receive the official project brochure and price sheet.</p>
-                  <form class="modal-form-view">
+                  <form class="modal-form-view" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9e9e47db-1801-4096-8040-10f8c0e3b989">
                     <div class="row">
                       <div class="col-12 col-lg-6">
                         <input type="text" required="" name="Full Name" placeholder="Full Name *" class="form-control">
                       </div>
                       <div class="col-12 col-lg-6">
-                        <input type="text" required="" name="Full Name" placeholder="Phone Number *" class="form-control">
+                        <input type="text" required="" name="Phone Number" placeholder="Phone Number *" class="form-control" maxlength="13" minlength="10" inputmode="numeric" >
                       </div>
                       <div class="col-12 col-lg-6">
-                        <input type="text" required="" name="Full Name" placeholder="Email Address *" class="form-control">
+                        <input type="text" required="" name="Email Address" placeholder="Email Address *" class="form-control">
                       </div>
                       <div class="col-12 col-lg-6">
-                        <input type="text" required="" name="Full Name" placeholder="Company Name *" class="form-control">
+                        <input type="text" required="" name="Company Name" placeholder="Company Name *" class="form-control">
                       </div>
                       <div class="col-12 col-lg-12">
-                        <input type="text" required="" name="Full Name" placeholder="Requirement *" class="form-control">
+                        <input type="text" required="" name="Requirement" placeholder="Requirement *" class="form-control">
                       </div>
                       <div class="col-12 col-lg-12">
-                        <input type="text" required="" name="Full Name" placeholder="Have a specific query?" class="form-control">
+                        <input type="text" required="" name="Query" placeholder="Have a specific query?" class="form-control">
                       </div>
                       <div class="col-12 col-lg-12">
                         <button type="submit" class="form-control">Get Pricing & Floor Plans <span>↗</span></button>

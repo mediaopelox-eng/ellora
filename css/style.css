@@ -419,7 +419,7 @@ ul.contact-info li label {
     min-height:150px;
     padding:20px 30px;
     border-left:1px solid rgba(255,255,255,.13);
-    display:flex;
+    display:block;
     align-items:center;
     gap:20px;
     justify-content: center;
@@ -429,7 +429,8 @@ ul.contact-info li label {
 }
 .stat strong{
     font:600 clamp(50px,6vw,78px) Manrope;
-    letter-spacing:-.08em
+    letter-spacing:-.08em;
+    display: block;
 }
 .stat span{
     font-size:16px;
@@ -990,7 +991,7 @@ ul.connect-card li label {
         font-size:43px
     }
     .stat span{
-        font-size:8px
+        font-size:11px
     }
     .space-card.large .space-image,.space-image{
         height:300px
