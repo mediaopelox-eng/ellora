@@ -430,9 +430,9 @@ ul.contact-info li label {
 .stat strong{
     font:600 clamp(50px,6vw,78px) Manrope;
     letter-spacing:-.08em;
-    display: block;
 }
 .stat span{
+    display: block;
     font-size:16px;
     text-transform:uppercase;
     letter-spacing:.12em;

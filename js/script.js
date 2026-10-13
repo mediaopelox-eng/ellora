@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       function tick(t){
         if(!startTime)startTime=t;
         const p=Math.min((t-startTime)/duration,1);
-        el.textContent=Math.floor(p*target)+(target===1?"":"+");
+        el.textContent=Math.floor(p*target)+(target===1?"":"");
         if(p<1)requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);io.disconnect();
