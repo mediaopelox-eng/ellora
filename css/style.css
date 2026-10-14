@@ -472,6 +472,7 @@ ul.contact-info li label {
 }
 .spaces h3 {
     font-family: Georgia, serif;
+    color: #000;
 }
 .spaces p {
     margin-bottom: 0;
@@ -680,6 +681,7 @@ ul.connectivity-features li + li {
 }
 ul.connectivity-features li h4 {
     font-size: 21px;
+    color: #00799f;
 }
 ul.connectivity-features li p {
     margin: 0;
@@ -778,9 +780,9 @@ ul.connect-card li span {
     margin: 0 auto 20px;
 }
 ul.connect-card li label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    min-height: 65px;
+    min-height: 55px;
 }
 .lead-form input,.lead-form select{
     width:100%;
