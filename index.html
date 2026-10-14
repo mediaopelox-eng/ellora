@@ -117,6 +117,42 @@
     <section class="intro section-pad" id="overview">
       <div class="container">
         <div class="row align-items-end">
+          
+          <div class="col-lg-6 d-block d-sm-none">
+            <div class="intro-form-background-image" style="background-image: url(images/hero-banner.png);">
+              <div class="intro-form-card">
+                <h3>Get Pricing & Availability</h3>
+                <p class="muted-copy">Fill in your details to receive the official project brochure and price sheet.</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="9e9e47db-1801-4096-8040-10f8c0e3b989">
+                  <input type="hidden" name="redirect" value="https://official.elloragroup.in/thank-you.html">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <input type="text" required="" name="Full Name" placeholder="Full Name *" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <input type="text" required="" name="Phone Number" placeholder="Phone Number *" class="form-control" maxlength="13" minlength="10" inputmode="numeric" >
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <input type="text" required="" name="Email Address" placeholder="Email Address *" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <input type="text" required="" name="Company Name" placeholder="Company Name *" class="form-control">
+                    </div>
+                    <!-- <div class="col-12 col-lg-12">
+                      <input type="text" required="" name="Requirement" placeholder="Requirement *" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-12">
+                      <input type="text" required="" name="Query" placeholder="Have a specific query?" class="form-control">
+                    </div> -->
+                    <div class="col-12 col-lg-12">
+                      <button type="submit" class="form-control">Get Pricing & Floor Plans <span>↗</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-6">
             <span class="eyebrow reveal">GET IN TOUCH</span>
             <h2 class="section-title reveal">Secure Your <em>Future<br> Corporate Address.</em> </h2>
@@ -156,7 +192,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-none d-sm-block">
             <div class="intro-form-background-image" style="background-image: url(images/hero-banner.png);">
               <div class="intro-form-card">
                 <h3>Get Pricing & Availability</h3>
