@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Ellora olearise</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .intro {
+      text-align: center;
+    }
+
+    .intro p.muted-copy {
+      margin: 0 auto;
+      max-width: 720px;
+    }
+
+    ul.contact-info {
+      padding: 15px !important;
+      margin: 15px 0px;
+      display: inline-block;
+      border-top: 1px solid #31758a4d;
+      border-bottom: 1px solid #31758a4d;
+    }
+
+    ul.contact-info li {
+        display: inline-block;
+        padding: 0 20px 0 55px;
+        text-align: left;
+        margin: 0;
+    }
+
+
+
+
+    .success-card {
+            text-align: center;
+        }
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #dff5e5;
+            color: #16a34a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .success-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold-dark);
+            margin-bottom: 12px;
+            font-family: "Playfair Display", serif;
+        }
+
+        .success-text {
+            font-size: 18px;
+            color: #000;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .btn-back {
+            background: var(--gold-dark);
+            color: #fff;
+            border: none;
+            padding: .7rem 2rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            transition: background .2s, transform .15s;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="preloader"><div class="loader-mark"><img src="images/logo-white.png"></div></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" href="#home"><img src="images/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li><a class="nav-link" href="#overview">Get In Touch</a></li>
+          <li><a class="nav-link" href="#spaces">Why Olearise</a></li>
+          <li><a class="nav-link" href="#location">Location</a></li>
+          <li><a class="nav-link" href="#plan">Floor Plan</a></li>
+          <li><a class="nav-link" href="#amenities">Amenities</a></li>
+        </ul>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#mainModalPopup" class="nav-cta">Schedule a Visit <span>↗</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-kicker reveal">ELLORA OLEARISE MHAPE, TTC</div>
+          <h1 class="reveal">Navi Mumbai's 3.0 <br><em>Next Commercial</em><br>Landmark.</h1>
+          <h4 class="reveal">500 sq. ft. onwards, up to 20,000 sq. ft. floor plates</h4>
+          <p class="hero-copy reveal">Strategically located on the bustling commercial corridor between Mahape TTC and Kopar Khairane,  Ellora Olearise offers <strong style="font-size: 18px;">ready-to-move</strong> office spaces designed for businesses that aspire to lead.</p>
+          <div class="hero-actions reveal">
+            <a href="#overview" class="btn-premium">Get Pricing & Floor Plans <span>↓</span></a>
+            </div>
+        </div>
+        <!-- <div class="hero-bottom">
+          <div><small>LOCATION</small><strong>Business District, Mumbai</strong></div>
+          <div><small>CONFIGURATION</small><strong>Premium Offices & Retail</strong></div>
+          <div><small>STATUS</small><strong>Now Leasing</strong></div>
+        </div>
+        <div class="scroll-note">SCROLL TO DISCOVER <span>↓</span></div> -->
+        <div class="card-list reveal">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="hero-card">
+                <h3>Location</h3>
+                <p class="line-1">Located Between BKC & Lower Parel</p>
+                <span></span>
+                <p class="line-2">Central Business District</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="hero-card">
+                <h3>Units</h3>
+                <p class="line-1">500 sq. ft. onwards, up to 20,000 sq. ft. floor plates</p>
+                <span></span>
+                <p class="line-2">Flexible Office Configurations</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="hero-card">
+                <h3>Investment</h3>
+                <p class="line-1">High Rental Yield Potential</p>
+                <span></span>
+                <p class="line-2">Investor's First Choice</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="hero-card">
+                <h3>Scale</h3>
+                <p class="line-1">Iconic Design & Exclusive Facade</p>
+                <span></span>
+                <p class="line-2"> Freehold Commercial Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="overview">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-12">
+            <span class="eyebrow reveal">GET IN TOUCH</span>
+            <h2 class="section-title reveal">Secure Your <em>Future<br> Corporate Address.</em> </h2>
+            <p class="muted-copy reveal">Complete the form to access comprehensive project details, exclusive pricing, floor plans, and current inventory availability at Ellora Olearise.</p>
+            <ul class="contact-info reveal">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00799f"><path d="M777.61-140q-113.07 0-227.19-52.58-114.11-52.58-209.69-148.34-95.57-95.77-148.15-209.7Q140-664.54 140-777.61q0-18.17 12-30.28T182-820h130.46q15.15 0 26.73 9.89 11.58 9.88 14.73 24.42L376.85-668q2.38 16.38-1 28.15-3.39 11.77-12.16 19.77l-92.38 89.93q22.3 40.84 50.96 77.27 28.65 36.42 62.04 69.57 32.92 32.93 70 61.16 37.08 28.23 80.08 52.54l89.76-90.54q9.39-9.77 22.74-13.7 13.34-3.92 27.73-1.92l111.07 22.62q15.15 4 24.73 15.46t9.58 26V-182q0 18-12.11 30t-30.28 12ZM242.92-586.92l71.39-68.31q1.92-1.54 2.5-4.23.58-2.69-.19-5l-17.39-89.39q-.77-3.07-2.69-4.61-1.92-1.54-5-1.54H206q-2.31 0-3.85 1.54-1.53 1.54-1.53 3.85 3.07 41 13.42 83.3 10.34 42.31 28.88 84.39Zm348 345.69q39.77 18.54 82.96 28.35 43.2 9.8 80.73 11.65 2.31 0 3.85-1.54t1.54-3.85v-84.15q0-3.08-1.54-5t-4.61-2.69l-84-17.08q-2.31-.77-4.04-.19-1.73.58-3.66 2.5l-71.23 72Zm-348-345.69Zm348 345.69Z"/></svg>
+                <label>Call Us</label>
+                <div class="value muted-copy">+91 99201 99122</div>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00799f"><path d="M172.31-180Q142-180 121-201q-21-21-21-51.31v-455.38Q100-738 121-759q21-21 51.31-21h615.38Q818-780 839-759q21 21 21 51.31v455.38Q860-222 839-201q-21 21-51.31 21H172.31ZM480-457.69 160-662.31v410q0 5.39 3.46 8.85t8.85 3.46h615.38q5.39 0 8.85-3.46t3.46-8.85v-410L480-457.69Zm0-62.31 313.85-200h-627.7L480-520ZM160-662.31V-720v467.69q0 5.39 3.46 8.85t8.85 3.46H160v-422.31Z"/></svg>
+                <label>Email Us</label>
+                <div class="value muted-copy">sales@elloragroup.in</div>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00799f"><path d="M212.31-100Q182-100 161-121q-21-21-21-51.31v-535.38Q140-738 161-759q21-21 51.31-21h55.38v-84.61h61.54V-780h303.08v-84.61h60V-780h55.38Q778-780 799-759q21 21 21 51.31v535.38Q820-142 799-121q-21 21-51.31 21H212.31Zm0-60h535.38q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-375.38H200v375.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85ZM200-607.69h560v-100q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H212.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v100Zm0 0V-720v112.31Zm280 210.77q-14.69 0-25.04-10.35-10.34-10.34-10.34-25.04 0-14.69 10.34-25.04 10.35-10.34 25.04-10.34t25.04 10.34q10.34 10.35 10.34 25.04 0 14.7-10.34 25.04-10.35 10.35-25.04 10.35Zm-185.04-10.35q-10.34-10.34-10.34-25.04 0-14.69 10.34-25.04 10.35-10.34 25.04-10.34t25.04 10.34q10.34 10.35 10.34 25.04 0 14.7-10.34 25.04-10.35 10.35-25.04 10.35t-25.04-10.35ZM640-396.92q-14.69 0-25.04-10.35-10.34-10.34-10.34-25.04 0-14.69 10.34-25.04 10.35-10.34 25.04-10.34t25.04 10.34q10.34 10.35 10.34 25.04 0 14.7-10.34 25.04-10.35 10.35-25.04 10.35ZM480-240q-14.69 0-25.04-10.35-10.34-10.34-10.34-25.03 0-14.7 10.34-25.04 10.35-10.35 25.04-10.35t25.04 10.35q10.34 10.34 10.34 25.04 0 14.69-10.34 25.03Q494.69-240 480-240Zm-185.04-10.35q-10.34-10.34-10.34-25.03 0-14.7 10.34-25.04 10.35-10.35 25.04-10.35t25.04 10.35q10.34 10.34 10.34 25.04 0 14.69-10.34 25.03Q334.69-240 320-240t-25.04-10.35ZM640-240q-14.69 0-25.04-10.35-10.34-10.34-10.34-25.03 0-14.7 10.34-25.04 10.35-10.35 25.04-10.35t25.04 10.35q10.34 10.34 10.34 25.04 0 14.69-10.34 25.03Q654.69-240 640-240Z"/></svg>
+                <label>Schedule a Visit</label>
+                <div class="value muted-copy">Book a private consultation and site tour at your convenience</div>
+              </li>
+            </ul>
+            <ul class="connect-card clearfix reveal d-none d-sm-block">
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M180-347.69V-720q0-40.38 20.87-67.5 20.87-27.11 59.84-43.05 38.96-15.94 94.67-22.69Q411.1-860 480-860q71.64 0 127.37 6.55 55.73 6.55 94.1 22.49 38.37 15.94 58.45 42.85Q780-761.2 780-720v372.31q0 53.61-37.04 90.65Q705.92-220 652.31-220l60 60v20h-52.05l-80-80H379.74l-80 80h-52.05v-20l60-60q-53.61 0-90.65-37.04Q180-294.08 180-347.69Zm300-462.05q-118.54 0-171.87 15.52-53.34 15.53-70.18 44.99H724.1q-14.18-28.8-70.25-44.65-56.08-15.86-173.85-15.86ZM230.26-532.82h226.51v-166.16H230.26v166.16Zm422.05 50.26H230.26h499.48-77.43Zm-145.29-50.26h222.72v-166.16H507.02v166.16ZM372.96-339.73q14.48-14.35 14.48-35.4 0-21.05-14.48-35.52-14.47-14.48-35.4-14.48-20.92 0-35.39 14.48-14.48 14.47-14.48 35.52 0 21.05 14.48 35.4 14.47 14.34 35.39 14.34 20.93 0 35.4-14.34Zm284.87 0q14.48-14.35 14.48-35.4 0-21.05-14.48-35.52-14.47-14.48-35.39-14.48-20.93 0-35.4 14.48-14.48 14.47-14.48 35.52 0 21.05 14.48 35.4 14.47 14.34 35.4 14.34 20.92 0 35.39-14.34Zm-350.14 71.78h344.62q32.74 0 55.09-23.29 22.34-23.3 22.34-56.45v-134.87H230.26v134.87q0 33.15 22.34 56.45 22.35 23.29 55.09 23.29ZM480-749.23h244.1-486.15H480Z"></path></svg></span>
+                <label>Kopar Khairane<br> Railway Station</label>
+                <p>3 mins | 1.6 km</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M336.36-140v-129.05h50.25V-140h-50.25Zm0-275.62v-129.05h50.25v129.05h-50.25Zm0-275.35V-820h50.25v129.03h-50.25ZM83.36-140l101.41-680h49.84L133.23-140H83.36Zm591.21-3.1q-4.97-3.1-8-7.96l-3.69-8.3q-21.2-44.26-58.98-76.06-37.79-31.81-64.36-72.35-15.77-23.69-23.14-50.56-7.37-26.88-7.37-54.96 0-71.94 52.57-120.36 52.57-48.43 125.43-48.43 72.23 0 122.6 51.6Q860-478.89 860-406.1q0 26.72-7.42 51.83-7.43 25.11-22.27 46.5-26.81 41.07-64.97 72.22-38.16 31.14-58.26 75.97l-3.65 8.45q-2.74 4.9-7.64 8.01-4.89 3.12-10.58 3.12-5.68 0-10.64-3.1Zm62.12-212.52q21.77-21.76 21.77-52.07t-21.77-52.08q-21.77-21.77-52.08-21.77-30.3 0-52.07 21.77t-21.77 52.08q0 30.31 21.77 52.07 21.77 21.77 52.07 21.77 30.31 0 52.08-21.77ZM520.46-602.36 487.95-820h49.87l27.92 187.23q-12.43 6.69-23.52 13.84-11.09 7.16-21.76 16.57Z"></path></svg></span>
+                <label>Thane - Belapur<br> Road</label>
+                <p>2 mins</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="m396.26-138.44-89.41-168.61-169.41-90.21 51.46-51.25 143.02 25.31 121.75-121.34-313.41-133.43 63.82-63.85 380.28 65.98 128.85-129.24q18.84-18.84 45.93-18.84t45.94 18.84q18.84 18.85 18.84 45.84 0 26.98-18.84 45.83L675.9-584.36l65.71 380.08-64.02 64.02-133.26-313.41L423-331.92l24.46 142.02-51.2 51.46Z"></path></svg></span>
+                <label>D.B. Patil<br> Int. Airport</label>
+                <p>20 mins</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="1">0</strong><span>SIGNATURE <br>ADDRESS</span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="20000">0</strong><span>SQ. FT. LARGE <br>FLOOR PLATES⁠ </span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="20">0</strong><span>Min FROM NEW INTERNATIONAL AIRPORT</span></div>
+          <div class="col-6 col-lg-3 stat reveal"><strong data-count="12">0</strong> <strong>%</strong><span>⁠RENTAL YIELD <br>POTENTIAL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spaces section-pad" id="spaces">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="section-head d-flex justify-content-between align-items-end mb-5">
+              <div><span class="eyebrow reveal">WHY CHOOSE ELLORA OLEARISE</span><h2 class="section-title reveal">Why Choose<br><em>Ellora Olearise?</em></h2></div>
+            </div>
+                <img src="images/eo-grid.png">
+          </div>
+          <div class="col-12 col-md-8">
+            <ul>
+              <li>
+                <span>01</span>
+                <h3 class="muted-copy">Commercial Landmark</h3>
+                <p class="muted-copy">Beyond standard offices; crafted for corporations, enterprises, and high-value businesses looking for an elite identity.</p>
+              </li>
+              <li>
+                <span>02</span>
+                <h3 class="muted-copy">Strategic Location Hub</h3>
+                <p class="muted-copy">Positioned strategically near major infrastructure, including the upcoming International Airport, major Data Centers, and the Turbhe-Kharghar Link Road.</p>
+              </li>
+              <li>
+                <span>03</span>
+                <h3 class="muted-copy">Investment Potential</h3>
+                <p class="muted-copy">Exceptional rental yield potential paired with long-term capital appreciation in Navi Mumbai's rapidly growing commercial zone.</p>
+              </li>
+              <li>
+                <span>04</span>
+                <h3 class="muted-copy">Scalable Floor Plates</h3>
+                <p class="muted-copy">Flexible office spaces ranging from 500 sq. ft. up to massive 20,000 sq. ft. floor plates designed to grow with your enterprise. </p>
+              </li>
+              <li>
+                <span>05</span>
+                <h3 class="muted-copy">Modern Business Lifestyle</h3>
+                <p class="muted-copy">World-class amenities, grand entrance lobbies, and futuristic infrastructure designed to enhance productivity, networking, and workplace experience.</p>
+              </li>
+              <li>
+                <span>06</span>
+                <h3 class="muted-copy">Architectural Excellence</h3>
+                <p class="muted-copy">An iconic commercial masterpiece featuring an exclusive facade and contemporary design built to meet evolving market demands.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location section-pad" id="location">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <span class="eyebrow reveal">LOCATION ADVANTAGE</span>
+            <h2 class="section-title reveal">Well Connected. <br><em>Perfectly Positioned.</em></h2>
+            <p class="muted-copy reveal mt-4">Located strategically in the thriving commercial hub of Mhape and Kopar Khairane, Ellora Olearise enjoys exceptional connectivity to Navi Mumbai's key business districts, major highways, transport hubs, and lifestyle destinations. With railway stations and transit links just minutes away, the address offers unmatched accessibility for businesses, professionals, and visitors.</p>
+          </div>
+          <!-- <div class="col-lg-6 offset-lg-1">
+            <div class="connect-list">
+              <div class="connect reveal"><span>Metro Station</span><b>05 min</b></div>
+              <div class="connect reveal"><span>Express Highway</span><b>08 min</b></div>
+              <div class="connect reveal"><span>International Airport</span><b>25 min</b></div>
+              <div class="connect reveal"><span>Business District</span><b>10 min</b></div>
+              <div class="connect reveal"><span>Premium Hotels</span><b>07 min</b></div>
+            </div>
+          </div> -->
+          <div class="col-lg-5 text-center">
+            <ul class="connectivity-features clearfix">
+              <li>
+                <h4>Seamless Connectivity</h4>
+                <p>Well-connected to major road networks, Thane-Belapur Highway, Palm Beach Road, and railway networks.</p>
+              </li>
+              <li>
+                <h4>Strategic Infrastructure Proximity</h4>
+                <p>Situated near major Data Centers, the upcoming D.B. Patil International Airport, and the crucial Turbhe-Kharghar Link Road.</p>
+              </li>
+              <li>
+                <h4>Navi Mumbai's Prime Business Hub</h4>
+                <p>Strategically located in a rapidly growing commercial corridor surrounded by major industrial areas, commercial developments, and daily essentials.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 text-center">
+            <div class="map-box reveal" style="background-image: url(images/map.jpg); background-position: center; background-size: cover;">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <ul class="connect-card clearfix">
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M180-347.69V-720q0-40.38 20.87-67.5 20.87-27.11 59.84-43.05 38.96-15.94 94.67-22.69Q411.1-860 480-860q71.64 0 127.37 6.55 55.73 6.55 94.1 22.49 38.37 15.94 58.45 42.85Q780-761.2 780-720v372.31q0 53.61-37.04 90.65Q705.92-220 652.31-220l60 60v20h-52.05l-80-80H379.74l-80 80h-52.05v-20l60-60q-53.61 0-90.65-37.04Q180-294.08 180-347.69Zm300-462.05q-118.54 0-171.87 15.52-53.34 15.53-70.18 44.99H724.1q-14.18-28.8-70.25-44.65-56.08-15.86-173.85-15.86ZM230.26-532.82h226.51v-166.16H230.26v166.16Zm422.05 50.26H230.26h499.48-77.43Zm-145.29-50.26h222.72v-166.16H507.02v166.16ZM372.96-339.73q14.48-14.35 14.48-35.4 0-21.05-14.48-35.52-14.47-14.48-35.4-14.48-20.92 0-35.39 14.48-14.48 14.47-14.48 35.52 0 21.05 14.48 35.4 14.47 14.34 35.39 14.34 20.93 0 35.4-14.34Zm284.87 0q14.48-14.35 14.48-35.4 0-21.05-14.48-35.52-14.47-14.48-35.39-14.48-20.93 0-35.4 14.48-14.48 14.47-14.48 35.52 0 21.05 14.48 35.4 14.47 14.34 35.4 14.34 20.92 0 35.39-14.34Zm-350.14 71.78h344.62q32.74 0 55.09-23.29 22.34-23.3 22.34-56.45v-134.87H230.26v134.87q0 33.15 22.34 56.45 22.35 23.29 55.09 23.29ZM480-749.23h244.1-486.15H480Z"/></svg></span>
+                <label>Kopar Khairane<br> Railway Station</label>
+                <p>3 mins | 1.6 km</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M180-347.69V-720q0-40.38 20.87-67.5 20.87-27.11 59.84-43.05 38.96-15.94 94.67-22.69Q411.1-860 480-860q71.64 0 127.37 6.55 55.73 6.55 94.1 22.49 38.37 15.94 58.45 42.85Q780-761.2 780-720v372.31q0 53.61-37.04 90.65Q705.92-220 652.31-220l60 60v20h-52.05l-80-80H379.74l-80 80h-52.05v-20l60-60q-53.61 0-90.65-37.04Q180-294.08 180-347.69Zm300-462.05q-118.54 0-171.87 15.52-53.34 15.53-70.18 44.99H724.1q-14.18-28.8-70.25-44.65-56.08-15.86-173.85-15.86ZM230.26-532.82h226.51v-166.16H230.26v166.16Zm422.05 50.26H230.26h499.48-77.43Zm-145.29-50.26h222.72v-166.16H507.02v166.16ZM372.96-339.73q14.48-14.35 14.48-35.4 0-21.05-14.48-35.52-14.47-14.48-35.4-14.48-20.92 0-35.39 14.48-14.48 14.47-14.48 35.52 0 21.05 14.48 35.4 14.47 14.34 35.39 14.34 20.93 0 35.4-14.34Zm284.87 0q14.48-14.35 14.48-35.4 0-21.05-14.48-35.52-14.47-14.48-35.39-14.48-20.93 0-35.4 14.48-14.48 14.47-14.48 35.52 0 21.05 14.48 35.4 14.47 14.34 35.4 14.34 20.92 0 35.39-14.34Zm-350.14 71.78h344.62q32.74 0 55.09-23.29 22.34-23.3 22.34-56.45v-134.87H230.26v134.87q0 33.15 22.34 56.45 22.35 23.29 55.09 23.29ZM480-749.23h244.1-486.15H480Z"/></svg></span>
+                <label>Turbhe<br> Railway Station</label>
+                <p>7 mins | 3.5 km</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M336.36-140v-129.05h50.25V-140h-50.25Zm0-275.62v-129.05h50.25v129.05h-50.25Zm0-275.35V-820h50.25v129.03h-50.25ZM83.36-140l101.41-680h49.84L133.23-140H83.36Zm591.21-3.1q-4.97-3.1-8-7.96l-3.69-8.3q-21.2-44.26-58.98-76.06-37.79-31.81-64.36-72.35-15.77-23.69-23.14-50.56-7.37-26.88-7.37-54.96 0-71.94 52.57-120.36 52.57-48.43 125.43-48.43 72.23 0 122.6 51.6Q860-478.89 860-406.1q0 26.72-7.42 51.83-7.43 25.11-22.27 46.5-26.81 41.07-64.97 72.22-38.16 31.14-58.26 75.97l-3.65 8.45q-2.74 4.9-7.64 8.01-4.89 3.12-10.58 3.12-5.68 0-10.64-3.1Zm62.12-212.52q21.77-21.76 21.77-52.07t-21.77-52.08q-21.77-21.77-52.08-21.77-30.3 0-52.07 21.77t-21.77 52.08q0 30.31 21.77 52.07 21.77 21.77 52.07 21.77 30.31 0 52.08-21.77ZM520.46-602.36 487.95-820h49.87l27.92 187.23q-12.43 6.69-23.52 13.84-11.09 7.16-21.76 16.57Z"/></svg></span>
+                <label>Thane - Belapur<br> Road</label>
+                <p>2 mins</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M180-180v-600h50.26v600H180Zm274.87 0v-141.95h50.26V-180h-50.26Zm274.87 0v-600H780v600h-50.26ZM454.87-409.64v-141.13h50.26v141.13h-50.26Zm0-228.82V-780h50.26v141.54h-50.26Z"/></svg></span>
+                <label>Turbhe - Kharghar<br> Link Road</label>
+                <p>Direct Access</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="M830.2-521.49v328.93q0 25.84-18.35 44.2Q793.49-130 767.64-130H192.1q-25.84 0-44.2-18.36-18.36-18.36-18.36-44.2v-329.7q-26.46-21.33-36.76-53.93-10.29-32.6.66-67.4l40.87-131.74q8-25.9 26.95-40.28Q180.21-830 206.15-830h544.77q26.77 0 46.28 14.23 19.52 14.23 27.47 39.67l42.3 132.51q10.95 34.8.32 67.58-10.62 32.78-37.09 54.52Zm-261.17-23.64q33.84 0 53.19-20.37 19.34-20.37 15.93-45.27l-25.79-168.97H505.33v166.25q0 27.54 18.44 47.95 18.43 20.41 45.26 20.41Zm-183.39 0q29.92 0 49.68-20.07 19.76-20.08 19.76-48.29v-166.25H347.79L322-609.23q-3.23 22.38 15.08 43.24 18.3 20.86 48.56 20.86Zm-179.9 0q24.95 0 43.11-17.19 18.15-17.19 21.66-42.55l25.44-174.87h-95.49q-6.54 0-10.51 2.88-3.98 2.89-5.64 8.65L142.87-632.1q-9.82 30.79 8.21 58.88 18.02 28.09 54.66 28.09Zm548.26 0q33.95 0 53.82-26.98 19.87-26.99 9.46-59.99l-42.36-136.87q-1.66-5.77-5.64-8.27-3.97-2.5-10.51-2.5H664.2l25.44 174.87q3.77 25.36 21.8 42.55 18.02 17.19 42.56 17.19ZM192.1-180.26h575.54q5.13 0 8.72-3.46 3.59-3.46 3.59-8.84V-498q-3.82 1.97-11.05 2.55-7.23.58-14.9.58-25.92 0-47.37-10.52-21.45-10.51-41.76-33.12-16.02 19.84-39.43 31.74-23.41 11.9-54.36 11.9-26.95 0-48.54-9.96-21.59-9.97-42.33-30.71-17.72 19.92-41.39 30.3-23.67 10.37-49.23 10.37-28.15 0-52.05-10.22t-41.23-33.42q-26.72 25.23-49.27 34.43-22.55 9.21-41.3 9.21-7.25 0-14.15-.58t-11.8-2.55v305.44q0 5.38 3.59 8.84t8.72 3.46Zm575.54 0H192.1h575.54Z"/></svg></span>
+                <label>APMC<br> Market</label>
+                <p>13 mins | 3.8 km</p>
+              </li>
+              <li>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00799f"><path d="m396.26-138.44-89.41-168.61-169.41-90.21 51.46-51.25 143.02 25.31 121.75-121.34-313.41-133.43 63.82-63.85 380.28 65.98 128.85-129.24q18.84-18.84 45.93-18.84t45.94 18.84q18.84 18.85 18.84 45.84 0 26.98-18.84 45.83L675.9-584.36l65.71 380.08-64.02 64.02-133.26-313.41L423-331.92l24.46 142.02-51.2 51.46Z"/></svg></span>
+                <label>D.B. Patil<br> Int. Airport</label>
+                <p>20 mins</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture" id="plan">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="architecture-copy">
+              <span class="eyebrow">ARCHITECTURE OF SUCCESS</span>
+              <h2>Layouts<br> Engineered for <br><em>Peak Productivity</em></h2>
+              <p>From high performance compact suites to expansive corporate floor plates, every square foot is intelligently designed to inspire innovation, optimize workflow, and house your enterprise's greatest milestones.</p>
+              </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="architecture-image">
+              <img src="images/f-plan.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-pad" id="amenities">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <span class="eyebrow reveal">AMENITIES</span>
+            <h2 class="section-title reveal">An Elevated <br><em>Workplace Experience.</em></h2>
+            <p class="muted-copy reveal mt-4">Every convenience and facility is thoughtfully designed to enhance productivity, foster collaboration, and deliver an exceptional, future ready business environment</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="ame-card" style="background-image: url(images/ame-1.jpg);">
+              <div class="caption">
+                <h4>Grand Entrance Lobby</h4>
+                <p>A stunning, designer-finished welcome lobby that leaves an instant mark on clients.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="ame-card" style="background-image: url(images/ame-2.jpg);">
+              <div class="caption">
+                <h4>High-Speed Elevators </h4>
+                <p>Swift passenger lifts and dedicated service elevators for seamless vertical transit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="ame-card" style="background-image: url(images/ame-3.jpg);">
+              <div class="caption">
+                <h4>Advanced Safety Systems</h4>
+                <p>Cutting-edge fire safety architecture, secure corridors, and 24/7 security monitoring.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="ame-card" style="background-image: url(images/ame-4.jpg);">
+              <div class="caption">
+                <h4>Flexible Business Spaces</h4>
+                <p>Scalable layouts from 500 sq. ft. suites to massive 20,000 sq. ft. floor plates.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="ame-card" style="background-image: url(images/ame-5.jpg);">
+              <div class="caption">
+                <h4>Strategic Connectivity Hub</h4>
+                <p>Prime placement minutes from major railway stations and highway networks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="ame-card" style="background-image: url(images/ame-6.jpg);">
+              <div class="caption">
+                <h4>Dedicated Utility & Service Areas</h4>
+                <p>Efficiently mapped service infrastructure ensuring uninterrupted daily operations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about section-pad">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <span class="eyebrow">ELLORA GROUP</span>
+            <h2>A Landmark Opportunity Backed By <em>Decades Of Excellence</em></h2>
+            <p>Brought to you by the Ellora Group, a trusted name in shaping tomorrow's commercial and residential landscape. Backed by deep market expertise and a commitment to architectural innovation, we proudly present Ellora Olearise offering exceptional commercial spaces designed for businesses and discerning investors ready to lead the future.</p>
+            </div>
+          <div class="col-12 col-md-6" style="align-content: center; justify-content: center; display: grid;">
+            <img src="images/eg-logo.png" class="eg-logo"> 
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-5"><a class="navbar-brand" href="#home"><img src="images/logo-white.png"></a><p class="footer-copy mt-4">A premium commercial destination for businesses that refuse ordinary.</p></div>
+        <div class="col-6 col-lg-2"><small>EXPLORE</small>
+          <a href="#overview">Get In Touch</a>
+          <a href="#spaces">Why Olearise</a>
+          <a href="#location">Location</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <small>PROJECT</small>
+          <a href="#plan">Floor Plan</a>
+          <a href="#amenities">Amenities</a>
+        </div>
+        <div class="col-lg-3"><small>SALES OFFICE</small><p>Business District, Mumbai<br>+91 98765 43210<br>sales@elloragroup.com</p></div>
+      </div>
+      <div class="footer-bottom mt-5 pt-4 text-center"><span>© 2026 Ellora Olearise. All rights reserved.</span>
+        <!-- <span>Privacy · Disclaimer</span> -->
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="mainModalPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mainModalPopupLabel" aria-hidden="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content custom-modal-content">
+
+            <div class="modal-close" data-bs-dismiss="modal">
+                ✕
+            </div>
+
+            <div class="modal-body">
+                <div class="intro-form-card">
+                    <div class="success-card">
+                        <div class="success-icon">✓</div>
+                        <div class="success-title">Form submitted successfully!</div>
+                        <div class="success-text">
+                            Thank you for reaching out to us.<br>
+                            We'll review your submission and get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modalElement = document.getElementById("mainModalPopup");
+      const mainModal = new bootstrap.Modal(modalElement);
+      mainModal.show();
+    });
+  </script>
+</body>
+</html>
