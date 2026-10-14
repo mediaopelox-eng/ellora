@@ -1106,5 +1106,13 @@ footer a{
     .intro-form-card button {
         margin: 0 !important;
     }
+    .floating-enquire {
+        right: -60px;
+        bottom: 50%;
+        transform: rotate(-90deg);
+    }
+    .floating-enquire a {
+        padding: 4px 10px;
+    }
 }
  
