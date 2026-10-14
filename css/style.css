@@ -211,7 +211,7 @@ img {
 .hero-copy{
     font-size:16px;
     line-height:2;
-    max-width:550px;
+    max-width:570px;
     color:#000
 }
 .hero-actions{
@@ -846,7 +846,6 @@ ul.connect-card li label {
 }
 .footer-copy{
     color:#666;
-    max-width:340px;
     line-height:1.7
 }
 .footer-brand{
@@ -865,7 +864,6 @@ ul.connect-card li label {
 }
 .col-lg-2 small,.col-lg-3 small{
     display:block;
-    color:var(--accent);
     font-size:16px;
     letter-spacing:.18em;
     margin-bottom:17px
