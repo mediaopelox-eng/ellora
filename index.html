@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://project-css-sooty.vercel.app/ellora-style.css">
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -485,53 +485,97 @@
 
   <div class="modal fade" id="mainModalPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mainModalPopupLabel" aria-hidden="false">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content custom-modal-content">
-
-            <div class="modal-close" data-bs-dismiss="modal">
-                ✕
-            </div>
-
-            <div class="modal-body">
-                <div class="intro-form-card">
-                    <h3>Get Pricing &amp; Availability</h3>
-                    <p class="muted-copy">Fill in your details to receive the official project brochure and price sheet.</p>
-                  <form class="modal-form-view" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="9e9e47db-1801-4096-8040-10f8c0e3b989">
-                    <input type="hidden" name="redirect" value="https://official.elloragroup.in/thank-you.html">
-                    <div class="row">
-                      <div class="col-12">
-                        <input type="text" required="" name="Full Name" placeholder="Full Name *" class="form-control">
-                      </div>
-                      <div class="col-12">
-                        <input type="text" required="" name="Phone Number" placeholder="Phone Number *" class="form-control" maxlength="13" minlength="10" inputmode="numeric" >
-                      </div>
-                      <div class="col-12">
-                        <input type="text" required="" name="Email Address" placeholder="Email Address *" class="form-control">
-                      </div>
-                      <div class="col-12">
-                        <input type="text" required="" name="Company Name" placeholder="Company Name *" class="form-control">
-                      </div>
-                      <!-- <div class="col-12 col-lg-12">
-                        <input type="text" required="" name="Requirement" placeholder="Requirement *" class="form-control">
-                      </div>
-                      <div class="col-12 col-lg-12">
-                        <input type="text" required="" name="Query" placeholder="Have a specific query?" class="form-control">
-                      </div> -->
-                      <div class="col-12 col-lg-12">
-                        <button type="submit" class="form-control">Get Pricing & Floor Plans <span>↗</span></button>
-                      </div>
-                    </div>
-                  </form>
+      <div class="modal-content custom-modal-content">
+        <div class="modal-close" data-bs-dismiss="modal">
+            ✕
+        </div>
+        <div class="modal-body">
+          <div class="intro-form-card">
+              <h3>Get Pricing &amp; Availability</h3>
+              <p class="muted-copy">Fill in your details to receive the official project brochure and price sheet.</p>
+            <form class="modal-form-view" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="9e9e47db-1801-4096-8040-10f8c0e3b989">
+              <input type="hidden" name="redirect" value="https://official.elloragroup.in/thank-you.html">
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" required="" name="Full Name" placeholder="Full Name *" class="form-control">
+                </div>
+                <div class="col-12">
+                  <input type="text" required="" name="Phone Number" placeholder="Phone Number *" class="form-control" maxlength="13" minlength="10" inputmode="numeric" >
+                </div>
+                <div class="col-12">
+                  <input type="text" required="" name="Email Address" placeholder="Email Address *" class="form-control">
+                </div>
+                <div class="col-12">
+                  <input type="text" required="" name="Company Name" placeholder="Company Name *" class="form-control">
+                </div>
+                <!-- <div class="col-12 col-lg-12">
+                  <input type="text" required="" name="Requirement" placeholder="Requirement *" class="form-control">
+                </div>
+                <div class="col-12 col-lg-12">
+                  <input type="text" required="" name="Query" placeholder="Have a specific query?" class="form-control">
+                </div> -->
+                <div class="col-12 col-lg-12">
+                  <button type="submit" class="form-control">Get Pricing & Floor Plans <span>↗</span></button>
                 </div>
               </div>
-            </div>
+            </form>
+          </div>
         </div>
-</div>
+      </div>
+    </div>
+  </div>
 
   <div class="floating-enquire d-none d-sm-block"><a href="" data-bs-toggle="modal" data-bs-target="#mainModalPopup">ENQUIRE NOW <span>↗</span></a></div>
   <div class="floating-enquire d-block d-sm-none"><a href="" data-bs-toggle="modal" data-bs-target="#mainModalPopup">SITE VISIT <span>↗</span></a></div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const modalElement = document.getElementById("mainModalPopup");
+
+    if (!modalElement) return;
+
+    const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
+
+    let popupCount = 0;
+    let popupTimer;
+    let formSubmitted = false;
+
+    // Track both Web3Forms on the page
+    const web3Forms = document.querySelectorAll(
+        'form[action*="web3forms.com/submit"]'
+    );
+
+    web3Forms.forEach(function (form) {
+        form.addEventListener("submit", function () {
+            formSubmitted = true;
+            clearTimeout(popupTimer);
+        });
+    });
+
+    function triggerPopup() {
+        // Stop if a form has been submitted or the popup limit is reached
+        if (formSubmitted || popupCount >= 3) return;
+
+        // Open the modal only if it is not already visible
+        if (!modalElement.classList.contains("show")) {
+            modal.show();
+            popupCount++;
+        }
+
+        // Trigger the popup again after 10 seconds, up to 3 times total
+        if (!formSubmitted && popupCount < 3) {
+            popupTimer = setTimeout(triggerPopup, 10000);
+        }
+    }
+
+    // Show the first popup 20 seconds after page load
+    popupTimer = setTimeout(triggerPopup, 20000);
+});
+</script>
+
 </body>
 </html>
